@@ -4,12 +4,14 @@ import { AlbunsComponent } from './components/albuns/albuns.component';
 import { HomeComponent } from './components/home/home.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { ToDosComponent } from './components/to-dos/to-dos.component';
+import { PhotosComponent } from './components/photos/photos.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'todos', component: ToDosComponent },
   { path: 'posts', component: PostsComponent },
   { path: 'albuns', component: AlbunsComponent },
+  { path: 'photos/:id', component: PhotosComponent },
 
 ];
 

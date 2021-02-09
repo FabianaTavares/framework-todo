@@ -1,3 +1,4 @@
+import { PhotosDTO } from './../models/photos.model';
 import { CommentsDTO } from './../models/comments.model';
 import { AlbunsDTO } from './../models/albuns.model';
 import { TodosDTO } from './../models/todos.model';
@@ -56,7 +57,22 @@ export class TodoListService {
    * @description ALBUNS
    */
   getAlbunsList(): Observable<Array<AlbunsDTO>> {
-    return this.http.get<Array<AlbunsDTO>>(`${environment.API_URL}/albuns`);
+    return this.http.get<Array<AlbunsDTO>>(`${environment.API_URL}/albums`);
+  }
+
+  getAlbunsUsers(id: number | string): Observable<Array<AlbunsDTO>> {
+    return this.http.get<Array<AlbunsDTO>>(`${environment.API_URL}/users/${id}/albums`);
+  }
+
+  /**
+   * @description PHOTOS
+   */
+  getPhotosList(): Observable<Array<PhotosDTO>> {
+    return this.http.get<Array<PhotosDTO>>(`${environment.API_URL}/photos`);
+  }
+
+  getPhotosByIdAlbum(id: number | string): Observable<Array<PhotosDTO>> {
+    return this.http.get<Array<PhotosDTO>>(`${environment.API_URL}/albums/${id}/photos`);
   }
 
 }

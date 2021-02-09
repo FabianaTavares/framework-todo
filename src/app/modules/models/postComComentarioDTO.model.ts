@@ -1,4 +1,3 @@
-import { UsersDTO } from './users.model';
 import { CommentsDTO } from "./comments.model";
 import { PostsDTO } from "./posts.model";
 

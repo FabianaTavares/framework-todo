@@ -55,6 +55,8 @@ export class PostsComponent implements OnInit {
 
         this.postsComents = Array.from(postsMap.values());
 
+        console.log(this.postsComents)
+
       }
     );
   }

@@ -1,4 +1,4 @@
-export interface AlbunsDTO {
+export interface PhotosDTO {
   id: string;
   albumId: string;
   title: string;

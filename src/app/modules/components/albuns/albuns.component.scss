@@ -1,0 +1,89 @@
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.example-card {
+  display: block;
+  position: relative;
+  padding: 16px;
+  margin: 10px
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.mat-grid {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.mat-card-content {
+  justify-content: center;
+  display: flex;
+}
+
+table {
+  width: 100%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+  cursor: pointer;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+  cursor: pointer;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.example-element-description {
+  padding: 16px;
+  cursor: pointer;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.bold-title {
+  font-weight: bolder;
+  font-size: 15px;
+}

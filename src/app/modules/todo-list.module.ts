@@ -22,13 +22,16 @@ import { AlbunsComponent } from './components/albuns/albuns.component';
 import { ToDosComponent } from './components/to-dos/to-dos.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { PhotosComponent } from './components/photos/photos.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     PostsComponent,
     AlbunsComponent,
-    ToDosComponent
+    ToDosComponent,
+    PhotosComponent
   ],
   imports: [
     CommonModule,
@@ -49,7 +52,8 @@ import {MatListModule} from '@angular/material/list';
     MatTableModule,
     MatPaginatorModule,
     MatExpansionModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   exports:[
     HomeComponent,
