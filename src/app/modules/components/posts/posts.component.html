@@ -1,0 +1,18 @@
+
+<div class="row" *ngFor="let item of postsComents;">
+  <div class="col-md-12">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{item.title}}</mat-card-title>
+        <mat-card-subtitle>{{item.userId}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{item.body}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>
