@@ -48,13 +48,9 @@ export class ToDosComponent implements OnInit {
   }
 
   montaTabela(elemento){
-    console.log(elemento);
     this.todoListService.getUserByTodo(elemento.userId).subscribe(
       (response) => {
-        console.log(response);
         this.usersListas = response;
-
-        console.log(this.usersListas);
       }
     );
   }

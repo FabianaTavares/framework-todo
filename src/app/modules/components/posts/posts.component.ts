@@ -21,6 +21,7 @@ export class PostsComponent implements OnInit {
   postsComents: PostComComentariosDTO[] = [];
   userSelected: string = '';
   subscription!: Subscription;
+  panelOpenState = false;
 
   constructor(
     private todoListService: TodoListService
@@ -42,17 +43,17 @@ export class PostsComponent implements OnInit {
 
         const postsMap = new Map<string, PostComComentariosDTO>();
         for (const post of posts) {
-          postsMap.set(post.id, { ...post, coments: [] });
+          postsMap.set(post.id, { ...post, coments: [], users: [] });
         }
         for (const coment of coments) {
           postsMap.get(coment.postId).coments.push(coment);
         }
 
+        for (const user of users) {
+          postsMap.get(user.id).users.push(user.username);
+        }
+
         this.postsComents = Array.from(postsMap.values());
-
-        this.users = users;
-
-        console.log(this.postsComents);
 
       }
     );

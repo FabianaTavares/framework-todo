@@ -53,7 +53,7 @@ import {MatListModule} from '@angular/material/list';
   ],
   exports:[
     HomeComponent,
-    PostsComponent
+    //PostsComponent
   ]
 })
 export class TodoListModule { }
