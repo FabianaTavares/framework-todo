@@ -5,7 +5,7 @@ import { PostsDTO } from '../../models/posts.model';
 import { TodoListService } from '../../services/todo-list.service';
 import { CommentsDTO } from '../../models/comments.model';
 import { PostComComentariosDTO } from '../../models/PostComComentarioDTO.model';
-import { forkJoin, Subscription } from 'rxjs';
+import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-posts',
@@ -15,12 +15,8 @@ import { forkJoin, Subscription } from 'rxjs';
 })
 export class PostsComponent implements OnInit {
 
-  postsListas!: PostsDTO[];
-  comentsListas: CommentsDTO[] = [];
   users: UsersDTO[] = [];
   postsComents: PostComComentariosDTO[] = [];
-  userSelected: string = '';
-  subscription!: Subscription;
   panelOpenState = false;
 
   constructor(
@@ -54,8 +50,6 @@ export class PostsComponent implements OnInit {
         }
 
         this.postsComents = Array.from(postsMap.values());
-
-        console.log(this.postsComents)
 
       }
     );

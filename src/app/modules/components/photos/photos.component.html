@@ -1,17 +1,16 @@
 <div class="cardList">
-
-    <mat-card class="cardListItem"
-      *ngFor="let item of photos">
-      <mat-card-header>
-        <mat-card-subtitle>{{item.title}}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="{{item.thumbnailUrl}}">
-      <mat-card-content fxFlex>
-        <p>
-        <a href="{{item.url}}">url img</a>
-        </p>
-      </mat-card-content>
-    </mat-card>
+  <mat-card class="cardListItem"
+    *ngFor="let item of photos">
+    <mat-card-header>
+      <mat-card-subtitle>{{item?.title}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{item?.thumbnailUrl}}">
+    <mat-card-content fxFlex>
+      <p>
+      <a href="{{item?.url}}">url img</a>
+      </p>
+    </mat-card-content>
+  </mat-card>
 </div>
 
 

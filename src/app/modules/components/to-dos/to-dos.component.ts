@@ -3,8 +3,6 @@ import { TodosDTO } from './../../models/todos.model';
 import { Component, OnInit } from '@angular/core';
 import { TodoListService } from '../../services/todo-list.service';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import { Observable } from 'rxjs';
-
 
 @Component({
   selector: 'app-to-dos',
@@ -22,12 +20,10 @@ export class ToDosComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'title', 'completed'];
   innerDisplayedColumns: string[] = ['name']
-  //expandedElement: TodosDTO[] = [];
   isExpansionDetailRow = (i: number, row: Object) => row.hasOwnProperty('detailRow');
   expandedElement: any;
   todosListas: TodosDTO[] = [];
   usersListas: UsersDTO;
-  qtdTodos!: number;
 
   constructor(
     private todoListService: TodoListService
@@ -35,14 +31,12 @@ export class ToDosComponent implements OnInit {
 
   ngOnInit() {
     this.recuperaListaTodos();
-    //this.recuperarUsers();
   }
 
   recuperaListaTodos() {
     this.todoListService.getTodosList().subscribe(
       (response) => {
         this.todosListas = response;
-        this.qtdTodos = this.todosListas.length;
       }
     );
   }

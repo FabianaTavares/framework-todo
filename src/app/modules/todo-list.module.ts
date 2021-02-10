@@ -57,7 +57,6 @@ import { PhotosComponent } from './components/photos/photos.component';
   ],
   exports:[
     HomeComponent,
-    //PostsComponent
   ]
 })
 export class TodoListModule { }

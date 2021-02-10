@@ -18,7 +18,6 @@ export class TodoListService {
      private http: HttpClient
   ) { }
 
-
   /**
    * @description USUARIOS
    */
@@ -45,9 +44,6 @@ export class TodoListService {
     return this.http.get<Array<PostsDTO>>(`${environment.API_URL}/posts`);
   }
 
-   /**
-   * @description COMMENTS
-   */
   getCommentsList(): Observable<Array<CommentsDTO>> {
     return this.http.get<Array<CommentsDTO>>(`${environment.API_URL}/comments`);
   }

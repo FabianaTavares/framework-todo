@@ -3,11 +3,11 @@
   <div flex="">
     <mat-card class="example-card">
       <mat-card-header>
-        <mat-card-title>{{item.title}}</mat-card-title>
-        <mat-card-subtitle>{{item.users}}</mat-card-subtitle>
+        <mat-card-title>{{item?.title}}</mat-card-title>
+        <mat-card-subtitle>{{item?.users}}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <p>{{item.body}}</p>
+        <p>{{item?.body}}</p>
         <mat-accordion>
           <mat-expansion-panel (opened)="panelOpenState = true"
                               (closed)="panelOpenState = false">
@@ -18,9 +18,9 @@
             </mat-expansion-panel-header>
             <mat-nav-list>
               <mat-list-item *ngFor="let coments of item.coments">
-                 <h3 matLine><span class="bold-title">Nome:</span> {{coments.name}} </h3>
-                <p matLine><span class="bold-title">Email:</span> {{coments.email}} </p>
-                <p matLine class="demo-2"><span class="bold-title">Comentário</span> {{coments.body}} </p>
+                 <h3 matLine><span class="bold-title">Nome:</span> {{coments?.name}} </h3>
+                <p matLine><span class="bold-title">Email:</span> {{coments?.email}} </p>
+                <p matLine class="demo-2"><span class="bold-title">Comentário</span> {{coments?.body}} </p>
               </mat-list-item>
             </mat-nav-list>
           </mat-expansion-panel>

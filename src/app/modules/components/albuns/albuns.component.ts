@@ -20,21 +20,15 @@ export class AlbunsComponent implements OnInit {
   albuns: AlbunsDTO[] = [];
   photos: PhotosDTO[] = [];
   users: UsersDTO[] = [];
-  albumPhotos: AlbumDeFotosDTO[] = [];
-  userSelected: string = '';
-  subscription!: Subscription;
   usersAlbuns: UsersAlbunsDTO[] = [];
-
 
   constructor(
     private todoListService: TodoListService
   ) {
-
   }
 
   ngOnInit(): void  {
     this.recuperaListaAlbuns();
-
   }
 
   recuperaListaAlbuns(){
@@ -42,7 +36,6 @@ export class AlbunsComponent implements OnInit {
     this.todoListService.getUsersList().subscribe(
         (response) => {
           this.users = response;
-
           this.users.forEach(u => {
             this.todoListService.getAlbunsUsers(u.id).subscribe(
               (retorno) =>{

@@ -5,7 +5,6 @@
   justify-content: flex-start;
 }
 
-/* Column Gap */
 .cardList>* {
   box-sizing: border-box;
 }
@@ -16,7 +15,6 @@
   margin-bottom: 10px;
 }
 
-/* Item sizing */
 .cardListItem {
   flex: 0 1 calc(25.0% - 16px);
 }
@@ -29,7 +27,6 @@
     margin-right: 32px;
   }
 
-  /* Item sizing */
   .cardListItem {
     flex: 0 1 calc(50% - 32px);
   }
