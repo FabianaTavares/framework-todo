@@ -36,21 +36,20 @@ export class AlbunsComponent implements OnInit {
     this.todoListService.getUsersList().subscribe(
         (response) => {
           this.users = response;
-          this.users.forEach(u => {
-            this.todoListService.getAlbunsUsers(u.id).subscribe(
+           this.todoListService.getAlbunsList().subscribe(
               (retorno) =>{
-                retorno.forEach(r => {
-                  if(r.userId === u.id){
-                    const listFront = {
-                      id: u.id,
-                      username: u.username,
-                      idAlbun: r.id,
-                      title: r.title,
+                this.users.forEach(u => {
+                  retorno.forEach(r => {
+                    if(r.userId === u.id){
+                      const listFront = {
+                        id: u.id,
+                        username: u.username,
+                        idAlbun: r.id,
+                        title: r.title,
+                      }
+                      listaUsuariosAlbuns.push(listFront);
+                      this.dataSource = new MatTableDataSource(listaUsuariosAlbuns);
                     }
-                    listaUsuariosAlbuns.push(listFront);
-                    this.dataSource = new MatTableDataSource(listaUsuariosAlbuns);
-                  }
-
                 })
               }
             )
