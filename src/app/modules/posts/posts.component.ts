@@ -1,10 +1,10 @@
-import { UsersDTO } from './../../models/users.model';
+import { UsersDTO } from '../models/users.model';
 import { Component, OnInit } from '@angular/core';
 
-import { PostsDTO } from '../../models/posts.model';
-import { TodoListService } from '../../services/todo-list.service';
-import { CommentsDTO } from '../../models/comments.model';
-import { PostComComentariosDTO } from '../../models/PostComComentarioDTO.model';
+import { PostsDTO } from '../models/posts.model';
+import { TodoListService } from '../services/todo-list.service';
+import { CommentsDTO } from '../models/comments.model';
+import { PostComComentariosDTO } from '../models/PostComComentarioDTO.model';
 import { forkJoin } from 'rxjs';
 
 @Component({

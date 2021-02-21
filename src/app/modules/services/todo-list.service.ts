@@ -1,7 +1,7 @@
-import { PhotosDTO } from './../models/photos.model';
-import { CommentsDTO } from './../models/comments.model';
-import { AlbunsDTO } from './../models/albuns.model';
-import { TodosDTO } from './../models/todos.model';
+import { PhotosDTO } from '../models/photos.model';
+import { CommentsDTO } from '../models/comments.model';
+import { AlbunsDTO } from '../models/albuns.model';
+import { TodosDTO } from '../models/todos.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';

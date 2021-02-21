@@ -1,7 +1,7 @@
-import { UsersDTO } from './../../models/users.model';
-import { TodosDTO } from './../../models/todos.model';
+import { UsersDTO } from '../models/users.model';
+import { TodosDTO } from '../models/todos.model';
 import { Component, OnInit } from '@angular/core';
-import { TodoListService } from '../../services/todo-list.service';
+import { TodoListService } from '../services/todo-list.service';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({

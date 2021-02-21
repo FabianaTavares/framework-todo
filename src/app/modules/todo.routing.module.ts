@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AlbunsComponent } from './components/albuns/albuns.component';
-import { HomeComponent } from './components/home/home.component';
-import { PostsComponent } from './components/posts/posts.component';
-import { ToDosComponent } from './components/to-dos/to-dos.component';
-import { PhotosComponent } from './components/photos/photos.component';
+import { AlbunsComponent } from './albuns/albuns.component';
+import { HomeComponent } from '../components/home/home.component';
+import { ToDosComponent } from './to-dos/to-dos.component';
+import { PostsComponent } from './posts/posts.component';
+import { PhotosComponent } from './photos/photos.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },

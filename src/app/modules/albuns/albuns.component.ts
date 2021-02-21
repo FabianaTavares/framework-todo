@@ -1,11 +1,11 @@
-import { UsersAlbunsDTO } from './../../models/usersAlbuns.model';
-import { AlbunsDTO } from './../../models/albuns.model';
+import { UsersAlbunsDTO } from '../models/usersAlbuns.model';
+import { AlbunsDTO } from '../models/albuns.model';
 import { Component, OnInit } from '@angular/core';
-import { TodoListService } from '../../services/todo-list.service';
-import { UsersDTO } from '../../models/users.model';
+import { TodoListService } from '../services/todo-list.service';
+import { UsersDTO } from '../models/users.model';
 import { forkJoin, Subscription } from 'rxjs';
-import { AlbumDeFotosDTO } from '../../models/albumDeFotosDTO.model';
-import { PhotosDTO } from '../../models/photos.model';
+import { AlbumDeFotosDTO } from '../models/albumDeFotosDTO.model';
+import { PhotosDTO } from '../models/photos.model';
 import { MatTableDataSource } from '@angular/material';
 
 @Component({

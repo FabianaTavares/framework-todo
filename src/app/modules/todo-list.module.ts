@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from '../components/home/home.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
@@ -15,15 +15,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
-import { PostsComponent } from './components/posts/posts.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
-import { AlbunsComponent } from './components/albuns/albuns.component';
-import { ToDosComponent } from './components/to-dos/to-dos.component';
+import { AlbunsComponent } from './albuns/albuns.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { PhotosComponent } from './components/photos/photos.component';
+import { PostsComponent } from './posts/posts.component';
+import { ToDosComponent } from './to-dos/to-dos.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
