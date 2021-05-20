@@ -1,12 +1,13 @@
-import { PhotosDTO } from '../models/photos.model';
-import { CommentsDTO } from '../models/comments.model';
-import { AlbunsDTO } from '../models/albuns.model';
-import { TodosDTO } from '../models/todos.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+
+import { AlbunsDTO } from '../models/albuns.model';
+import { CommentsDTO } from '../models/comments.model';
+import { PhotosDTO } from '../models/photos.model';
 import { PostsDTO } from '../models/posts.model';
+import { TodosDTO } from '../models/todos.model';
 import { UsersDTO } from '../models/users.model';
 
 @Injectable({

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 import { AlbunsDTO } from '../models/albuns.model';
 import { PhotosDTO } from '../models/photos.model';
 import { UsersDTO } from '../models/users.model';

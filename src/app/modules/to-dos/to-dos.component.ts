@@ -1,8 +1,9 @@
-import { UsersDTO } from '../models/users.model';
-import { TodosDTO } from '../models/todos.model';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+
+import { TodosDTO } from '../models/todos.model';
+import { UsersDTO } from '../models/users.model';
 import { TodoListService } from '../services/todo-list.service';
-import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-to-dos',
