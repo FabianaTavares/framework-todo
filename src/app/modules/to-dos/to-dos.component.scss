@@ -25,43 +25,23 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 .example-element-row td {
   border-bottom-width: 0;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .example-element-detail {
   overflow: hidden;
   display: flex;
-   cursor: pointer;
-}
-
-.example-element-diagram {
-  min-width: 80px;
-  border: 2px solid black;
-  padding: 8px;
-  font-weight: lighter;
-  margin: 8px 0;
-  height: 104px;
-   cursor: pointer;
-}
-
-.example-element-symbol {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: normal;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .example-element-description {
   padding: 16px;
-   cursor: pointer;
-}
-
-.example-element-description-attribution {
-  opacity: 0.5;
-   cursor: pointer;
+  margin: 8px 0;
+  cursor: pointer;
 }
 
 .bold-title {
   font-weight: bolder;
   font-size: 15px;
+  margin-right: 0.5rem;
 }
